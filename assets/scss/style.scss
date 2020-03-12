@@ -6,7 +6,8 @@ nav{
         padding-right: 10px;
         padding-left: 10px;
         a{
-            font-weight: bold;;
+            font-weight: none;
+            font-size: 22px;
         }
         
     }
@@ -29,7 +30,6 @@ nav{
 }
 #catalogitems{
     padding-bottom: 15px;
-    padding: 10px;
 }
 footer{
     background-color: saddlebrown;
@@ -39,8 +39,15 @@ footer{
 }
  @media screen and (max-width: 576px){
     nav{
+        img{
+            width: 65vw;
+        }
         a.navbar-brand{
             margin-left: 0;
         }
+     }
+     #catalogitems{
+         padding-top: 20px;
+         width: 75vw;
      }
  }

@@ -5,7 +5,8 @@ nav li {
   padding-right: 10px;
   padding-left: 10px; }
   nav li a {
-    font-weight: bold; }
+    font-weight: none;
+    font-size: 22px; }
 nav a.navbar-brand img {
   height: 10vw; }
 
@@ -19,8 +20,7 @@ main {
     padding: 5px; }
 
 #catalogitems {
-  padding-bottom: 15px;
-  padding: 10px; }
+  padding-bottom: 15px; }
 
 footer {
   background-color: saddlebrown; }
@@ -28,7 +28,13 @@ footer {
     height: 10vh; }
 
 @media screen and (max-width: 576px) {
+  nav img {
+    width: 65vw; }
   nav a.navbar-brand {
-    margin-left: 0; } }
+    margin-left: 0; }
+
+  #catalogitems {
+    padding-top: 20px;
+    width: 75vw; } }
 
 /*# sourceMappingURL=style.css.map */
