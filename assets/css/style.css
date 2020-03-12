@@ -1,0 +1,187 @@
+body {
+  background: grey url(../../images/bg.png); }
+  body nav#pcNav {
+    margin-top: -25px;
+    margin-bottom: -30px;
+    background-image: url(../../images/bg.png); }
+    body nav#pcNav ul {
+      font: 21px 'Century Gothic', sans-serif;
+      margin: 0;
+      padding: 0;
+      font-weight: bold; }
+      body nav#pcNav ul li {
+        list-style-position: inside;
+        padding-right: 30px;
+        padding-left: 17px; }
+        body nav#pcNav ul li a {
+          text-decoration: none;
+          padding: 0; }
+  body section iframe {
+    height: 530px;
+    width: 55vw; }
+  body section div#pccatalog {
+    text-align: center;
+    font: 21px 'Century Gothic', sans-serif;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black, 0 0 1em black;
+    margin-top: 10px; }
+    body section div#pccatalog nav {
+      background-image: url(../../images/22.jpg); }
+    body section div#pccatalog a {
+      color: white; }
+    body section div#pccatalog a:hover {
+      color: #ff9900;
+      text-decoration: none; }
+  body section div#catalogFig figure {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center; }
+    body section div#catalogFig figure img {
+      width: 230px;
+      height: 250px; }
+    body section div#catalogFig figure figcaption {
+      margin-top: 7px;
+      font: 19px 'Century Gothic', sans-serif; }
+  body section div#catalogFig a {
+    color: black; }
+  body section div#catalogFig a:hover {
+    color: #ff9900;
+    text-decoration: none; }
+  body section div#info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; }
+    body section div#info h2 {
+      font: 45px 'Century Gothic', sans-serif;
+      color: black; }
+  body section div#info1 h2 {
+    text-align: justify;
+    font: 25px 'Century Gothic', sans-serif;
+    font-weight: none;
+    color: #303030; }
+  body section div#slideshow {
+    margin-bottom: 15px; }
+  body section div#contact {
+    margin-top: 0px;
+    text-align: center; }
+    body section div#contact h1 {
+      font: 75px 'Century Gothic', sans-serif; }
+    body section div#contact h3 {
+      font: 25px 'Century Gothic', sans-serif; }
+    body section div#contact a {
+      color: #353535; }
+    body section div#contact a:hover {
+      color: #ff9900;
+      text-decoration-line: none; }
+  body section div#Supp {
+    margin: 10px;
+    font: 20px 'Century Gothic', sans-serif; }
+  body section div#titleH h3 {
+    font: 30px 'Century Gothic', sans-serif;
+    color: black;
+    font-weight: none; }
+  body section div#name label {
+    font: 20px 'Century Gothic', sans-serif;
+    color: black;
+    font-weight: none; }
+  body section div#btn button {
+    background-color: #acacac;
+    font: 22px 'Century Gothic', sans-serif;
+    color: black;
+    font-weight: none; }
+  body section div#workinfo {
+    margin-top: 20px;
+    text-align: justify;
+    font: 28px 'Century Gothic', sans-serif; }
+    body section div#workinfo .leftimg {
+      float: left;
+      margin: 7px 7px 7px 0; }
+    body section div#workinfo .rightimg {
+      float: right;
+      margin: 7px 0 7px 7px; }
+    body section div#workinfo .h1 {
+      text-align: center; }
+
+footer {
+  background: #8B4513;
+  color: #dbdbdb;
+  font-size: 12px; }
+  footer h3 {
+    font: 13px 'Oswald', sans-serif;
+    color: #fff;
+    border-bottom: 1px solid #919191;
+    margin: 0 0 10px 0; }
+  footer a {
+    color: #dbdbdb; }
+  footer p {
+    margin: 5px 0; }
+
+#footer {
+  max-width: 960px;
+  margin: auto;
+  padding: 10px 0;
+  height: 110px; }
+
+#twitter {
+  float: left;
+  width: 470px; }
+  #twitter h3 {
+    font: 13px 'Century Gothic', sans-serif;
+    font-weight: none;
+    text-align: center; }
+
+#twitter p {
+  font: 12px 'Century Gothic', sans-serif;
+  font-weight: none;
+  padding-right: 15px; }
+
+#sitemap {
+  width: 150px;
+  height: 100px;
+  float: left;
+  margin-left: 20px;
+  padding-right: 15px; }
+  #sitemap h3 {
+    font: 13px 'Century Gothic', sans-serif;
+    font-weight: none;
+    text-align: center; }
+  #sitemap div {
+    display: inline-block; }
+  #sitemap div + div {
+    margin-left: 40px; }
+  #sitemap a {
+    font: 12px 'Century Gothic', sans-serif;
+    font-weight: none;
+    display: block;
+    text-decoration: none;
+    font-size: 12px;
+    margin-bottom: 2px; }
+  #sitemap a:hover {
+    color: #ff9900;
+    text-decoration: none; }
+
+#footer-logo {
+  float: right;
+  margin-top: 0px;
+  font-size: 10px;
+  text-align: right; }
+
+@media screen and (min-width: 576px) {
+  nav#pcNav {
+    display: auto; }
+
+  nav#mobNav {
+    display: none; } }
+@media screen and (max-width: 576px) {
+  nav#pcNav {
+    display: none; }
+
+  nav#mobNav {
+    display: auto;
+    margin-top: -10px; }
+    nav#mobNav img {
+      width: 250px;
+      height: 80px; } }
+
+/*# sourceMappingURL=style.css.map */
