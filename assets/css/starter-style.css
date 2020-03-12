@@ -1,0 +1,8 @@
+body {
+  padding-top: 5rem;
+  background-image: url(../images/bg.png);
+}
+.starter-main {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}

@@ -1,0 +1,45 @@
+*{
+    font-family: "Century Gothic";
+}
+nav{
+    li{
+        padding-right: 10px;
+        padding-left: 10px;
+        a{
+            font-weight: bold;;
+        }
+        
+    }
+    a.navbar-brand{
+        img{
+            height: 10vw;
+        }
+    }
+ }
+ main {
+     background-image: url(../images/bg.png);
+ }
+#catalog{
+    .col-12{
+        text-align: center;
+        padding: 5px;
+    }
+    padding-top: 25px;
+    
+}
+#catalogitems{
+    padding-bottom: 15px;
+}
+footer{
+    background-color: saddlebrown;
+    img{
+        height: 10vh;
+    }
+}
+ @media screen and (max-width: 576px){
+    nav{
+        a.navbar-brand{
+            margin-left: 0;
+        }
+     }
+ }
