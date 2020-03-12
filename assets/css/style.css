@@ -19,7 +19,8 @@ main {
     padding: 5px; }
 
 #catalogitems {
-  padding-bottom: 15px; }
+  padding-bottom: 15px;
+  padding: 10px; }
 
 footer {
   background-color: saddlebrown; }
