@@ -18,6 +18,12 @@ main {
   #catalog .col-12 {
     text-align: center;
     padding: 5px; }
+  #catalog .row .col-md-2 a {
+    color: saddlebrown; }
+  #catalog .row .col-md-2 a:hover {
+    font-weight: bold;
+    color: brown;
+    text-decoration: none; }
 
 #catalogitems {
   padding-bottom: 15px; }
@@ -35,6 +41,12 @@ footer {
 
   #catalogitems {
     padding-top: 20px;
-    width: 75vw; } }
+    width: 75vw; }
+
+  main #carousel img {
+    height: 30vh; } }
+@media screen and (min-width: 576px) {
+  main #carousel img {
+    height: 75vh; } }
 
 /*# sourceMappingURL=style.css.map */

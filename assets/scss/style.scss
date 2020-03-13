@@ -26,7 +26,18 @@ nav{
         padding: 5px;
     }
     padding-top: 25px;
-    
+    .row{
+        .col-md-2{
+            a {
+                color: saddlebrown;
+            }
+            a:hover{
+                font-weight: bold;
+                color: brown;
+                text-decoration: none;
+            }
+        }
+    }
 }
 #catalogitems{
     padding-bottom: 15px;
@@ -50,4 +61,20 @@ footer{
          padding-top: 20px;
          width: 75vw;
      }
+    main{
+        #carousel{
+            img{
+                height: 30vh;
+            }
+        }
+    }
+ }
+ @media screen and (min-width: 576px){
+    main{
+        #carousel{
+            img{
+                height: 75vh;
+            }
+        }
+    }   
  }
