@@ -13,6 +13,14 @@ nav a.navbar-brand img {
 main {
   background-image: url(../images/bg.png); }
 
+#about h1 {
+  font-size: 60px;
+  font-weight: bold; }
+
+p#about {
+  text-align: justify;
+  font-size: 25px; }
+
 #catalog {
   padding-top: 25px; }
   #catalog .col-12 {
@@ -39,12 +47,21 @@ footer {
   nav a.navbar-brand {
     margin-left: 0; }
 
-  #catalogitems {
+  main #alertCont h3 {
+    font-size: 20px; }
+  main #carousel {
+    margin-top: -50px; }
+    main #carousel img {
+      height: 30vh; }
+  main #catalogitems {
     padding-top: 20px;
     width: 75vw; }
-
-  main #carousel img {
-    height: 30vh; } }
+  main #about h1 {
+    font-size: 35px;
+    font-weight: bold; }
+  main p#about {
+    text-align: justify;
+    font-size: 15px; } }
 @media screen and (min-width: 576px) {
   main #carousel img {
     height: 75vh; } }
