@@ -55,7 +55,18 @@ p#about{
 footer{
     background-color: saddlebrown;
     img{
-        height: 10vh;
+        width: 20vw; 
+        height: 12vh;
+    }
+    #socNets {
+        text-align: center;
+        a {
+            img {
+                width: 40px;
+                height: 40px;
+                margin: 10px 5px;
+            }
+        }
     }
 }
  @media screen and (max-width: 576px){

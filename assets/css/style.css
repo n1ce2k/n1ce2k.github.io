@@ -39,7 +39,14 @@ p#about {
 footer {
   background-color: saddlebrown; }
   footer img {
-    height: 10vh; }
+    width: 20vw;
+    height: 12vh; }
+  footer #socNets {
+    text-align: center; }
+    footer #socNets a img {
+      width: 40px;
+      height: 40px;
+      margin: 10px 5px; }
 
 @media screen and (max-width: 576px) {
   nav img {
