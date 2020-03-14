@@ -10,6 +10,25 @@ nav li {
 nav a.navbar-brand img {
   height: 10vw; }
 
+#workinfo {
+  padding-top: 25px;
+  text-align: justify; }
+  #workinfo .leftimg {
+    float: left;
+    margin: 7px 7px 7px 0; }
+  #workinfo .rightimg {
+    float: right;
+    margin: 7px 0 7px 7px; }
+
+.h1work {
+  text-align: center; }
+
+.scale {
+  transition: 0.25s; }
+
+.scale:hover {
+  transform: scale(1.2); }
+
 main {
   background-image: url(../images/bg.png); }
 
@@ -32,6 +51,10 @@ p#about {
     font-weight: bold;
     color: brown;
     text-decoration: none; }
+
+#carouselabout {
+  padding-right: 0px;
+  padding-left: 0px; }
 
 #catalogitems {
   padding-bottom: 15px; }
@@ -60,6 +83,8 @@ footer {
     margin-top: -50px; }
     main #carousel img {
       height: 30vh; }
+  main #carouselabout img {
+    height: 30vh; }
   main #catalogitems {
     padding-top: 20px;
     width: 75vw; }
@@ -68,7 +93,10 @@ footer {
     font-weight: bold; }
   main p#about {
     text-align: justify;
-    font-size: 15px; } }
+    font-size: 15px; }
+
+  footer #imgfooter {
+    width: 100%; } }
 @media screen and (min-width: 576px) {
   main #carousel img {
     height: 75vh; } }
