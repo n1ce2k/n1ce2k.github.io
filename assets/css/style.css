@@ -11,14 +11,14 @@ nav a.navbar-brand img {
   height: 10vw; }
 
 #workinfo {
-  padding-top: 25px;
+  padding-top: 50px;
   text-align: justify; }
-  #workinfo .leftimg {
-    float: left;
-    margin: 7px 7px 7px 0; }
-  #workinfo .rightimg {
-    float: right;
-    margin: 7px 0 7px 7px; }
+  #workinfo h1 {
+    text-align: center; }
+  #workinfo p {
+    text-align: center; }
+    #workinfo p img {
+      width: 750px; }
 
 .h1work {
   text-align: center; }
@@ -77,12 +77,14 @@ footer {
   nav a.navbar-brand {
     margin-left: 0; }
 
+  main #workinfo h1 {
+    font-size: 30px; }
+  main #workinfo img {
+    width: 100vw; }
   main #alertCont h3 {
     font-size: 20px; }
-  main #carousel {
-    margin-top: -50px; }
-    main #carousel img {
-      height: 30vh; }
+  main #carousel img {
+    height: 40vh; }
   main #carouselabout img {
     height: 30vh; }
   main #catalogitems {

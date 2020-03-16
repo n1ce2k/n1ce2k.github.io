@@ -18,14 +18,19 @@ nav{
     }
  }
  #workinfo{
-    padding-top: 25px;
+    padding-top: 50px;
     text-align: justify;
-    .leftimg {
-        float: left;
-        margin: 7px 7px 7px 0; }
-    .rightimg {
-         float: right;
-        margin: 7px 0 7px 7px; }
+    h1{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+        img{
+            width: 750px;
+        }
+    }
+
+    
  }
  .h1work{
      text-align: center;
@@ -95,22 +100,29 @@ footer{
  @media screen and (max-width: 576px){
     nav{
         img{
-            width: 65vw;
+           width: 65vw;
         }
         a.navbar-brand{
             margin-left: 0;
         }
      }
     main{
+        #workinfo{
+            h1{
+                font-size: 30px;
+            }
+            img{
+                width: 100vw;
+            }
+        }
         #alertCont{
             h3{
                 font-size: 20px;
             }
         }
         #carousel{
-            margin-top: -50px;
             img{
-                height: 30vh;
+                height: 40vh;
             }
         }
         #carouselabout{
