@@ -10,9 +10,16 @@ nav li {
 nav a.navbar-brand img {
   height: 10vw; }
 
+#navigation nav li {
+  padding-left: 0px;
+  padding-right: 0px; }
+
 #workinfo {
+  padding-left: 25px;
+  padding-right: 25px;
   padding-top: 50px;
-  text-align: justify; }
+  text-align: justify;
+  font-size: 20px; }
   #workinfo h1 {
     text-align: center; }
   #workinfo p {
@@ -31,6 +38,9 @@ nav a.navbar-brand img {
 
 main {
   background-image: url(../images/bg.png); }
+
+#map iframe {
+  height: 55vh; }
 
 #about h1 {
   font-size: 60px;

@@ -1,10 +1,11 @@
 *{
     font-family: "Century Gothic";
 }
+
 nav{
     li{
-        padding-right: 10px;
-        padding-left: 10px;
+       padding-right: 10px;
+       padding-left: 10px;
         a{
             font-weight: none;
             font-size: 22px;
@@ -17,9 +18,21 @@ nav{
         }
     }
  }
+ #navigation{
+    nav{
+        li{
+        padding-left: 0px;
+        padding-right: 0px;
+        }
+    }
+    
+}
  #workinfo{
+    padding-left: 25px;
+    padding-right: 25px;
     padding-top: 50px;
     text-align: justify;
+    font-size: 20px;
     h1{
         text-align: center;
     }
@@ -44,6 +57,11 @@ nav{
  main {
      background-image: url(../images/bg.png);
     }
+#map{
+    iframe{
+        height: 55vh;
+    }
+}
 #about{
         h1{
             font-size: 60px;
