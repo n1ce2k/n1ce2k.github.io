@@ -206,7 +206,18 @@ p#about {
   background-image: url(/assets/images/tabyretka1.jpg); }
 
 footer {
-  background-color: saddlebrown; }
+  background-color: saddlebrown;
+  /*#foot_a{
+      padding-top: 5px;
+      text-align: center;
+     a{
+         color: rgb(155, 155, 155);
+         text-decoration: none;
+     }
+     a:hover{
+         color: white;
+     }
+  }*/ }
   footer img {
     width: 20vw;
     height: 12vh; }
@@ -216,14 +227,34 @@ footer {
       width: 40px;
       height: 40px;
       margin: 10px 5px; }
-  footer #foot_a {
-    padding-top: 5px;
+  footer #example1 h4 {
+    padding-top: 2px; }
+  footer #example1 a {
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    transition: all 0.3s cubic-bezier(0.2, 0, 0, 1);
+    z-index: 1;
     text-align: center; }
-    footer #foot_a a {
-      color: #9b9b9b;
-      text-decoration: none; }
-    footer #foot_a a:hover {
-      color: white; }
+    footer #example1 a:after {
+      content: '';
+      display: block;
+      height: 2px;
+      position: absolute;
+      bottom: 0;
+      right: 0px;
+      left: 0px;
+      background-color: #ffffff;
+      transition: all 0.3s cubic-bezier(0.2, 0, 0, 1);
+      transform-origin: bottom center;
+      z-index: -1; }
+    footer #example1 a:hover {
+      color: #2D2D2D; }
+      footer #example1 a:hover:after {
+        right: 0;
+        left: 0;
+        height: 100%; }
 
 @media screen and (max-width: 576px) {
   nav img {
