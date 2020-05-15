@@ -175,8 +175,15 @@ p#about {
   padding-right: 0px;
   padding-left: 0px; }
 
+#aside {
+  border: 1px solid black; }
+
 #catalogitems {
   padding-bottom: 15px; }
+  #catalogitems h3 {
+    font-size: 25px; }
+  #catalogitems h4 {
+    font-size: 20px; }
 
 .picture_1 {
   margin: 0px 0 5px;

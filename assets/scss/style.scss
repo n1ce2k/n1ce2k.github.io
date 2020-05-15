@@ -24,7 +24,6 @@ nav{
         padding-right: 0px;
         }
     }
-    
 }
  .scale{
     transition: 0.25s;
@@ -238,8 +237,17 @@ p#about{
     padding-right: 0px;
     padding-left: 0px;
 }
+#aside{
+    border: 1px solid black;
+}
 #catalogitems{
     padding-bottom: 15px;
+    h3{
+        font-size: 25px;
+    }
+    h4{
+        font-size: 20px;
+    }
 }
 .picture_1{
     margin: 0px 0 5px;
@@ -384,9 +392,6 @@ p#about{
     
   background-image: url(/assets/images/tabyretka1.jpg);
 }
-
-
-
 footer{
     background-color: saddlebrown;
     img{
@@ -440,7 +445,6 @@ footer{
           }
     }
 }
-
 @media screen and (max-width: 576px){
     nav{
         img{
