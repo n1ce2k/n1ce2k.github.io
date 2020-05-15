@@ -14,22 +14,6 @@ nav a.navbar-brand img {
   padding-left: 0px;
   padding-right: 0px; }
 
-#workinfo {
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-top: 50px;
-  text-align: justify;
-  font-size: 20px; }
-  #workinfo h1 {
-    text-align: center; }
-  #workinfo p {
-    text-align: center; }
-    #workinfo p img {
-      width: 750px; }
-
-.h1work {
-  text-align: center; }
-
 .scale {
   transition: 0.25s; }
 
@@ -42,6 +26,101 @@ main {
 #map iframe {
   height: 55vh; }
 
+#formCheck {
+  display: none;
+  font-family: Arial;
+  font-size: 17px;
+  padding: 8px; }
+  #formCheck * {
+    box-sizing: border-box; }
+  #formCheck .row {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 -16px; }
+  #formCheck .col-25 {
+    -ms-flex: 25%;
+    /* IE10 */
+    flex: 25%; }
+  #formCheck .col-50 {
+    -ms-flex: 50%;
+    /* IE10 */
+    flex: 50%; }
+  #formCheck .col-75 {
+    -ms-flex: 75%;
+    /* IE10 */
+    flex: 75%; }
+  #formCheck .col-25,
+  #formCheck .col-50,
+  #formCheck .col-75 {
+    padding: 0 16px; }
+  #formCheck .container {
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px; }
+  #formCheck input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px; }
+  #formCheck label {
+    margin-bottom: 10px;
+    display: block; }
+  #formCheck .icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px; }
+  #formCheck .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px; }
+  #formCheck .btn:hover {
+    background-color: #45a049; }
+  #formCheck a {
+    color: #2196F3; }
+  #formCheck hr {
+    border: 1px solid lightgrey; }
+  #formCheck span.price {
+    float: right;
+    color: grey; }
+
+#workinfo {
+  padding-top: 50px; }
+  #workinfo table {
+    font-size: 20px; }
+  #workinfo h1 {
+    font-weight: bold;
+    font-size: 45px; }
+  #workinfo h2 {
+    font-size: 32px; }
+  #workinfo h3 {
+    font-size: 20px; }
+    #workinfo h3 li {
+      padding-bottom: 20px; }
+  #workinfo a {
+    color: brown; }
+  #workinfo a:hover {
+    color: grey;
+    text-decoration: none; }
+
+#about .under_slideS h2 {
+  font-weight: bold;
+  font-size: 47px; }
+#about .under_slideS h3 {
+  text-align: justify; }
+#about .under_slideS li {
+  padding-bottom: 5px; }
 #about h1 {
   font-size: 60px;
   font-weight: bold; }
@@ -228,18 +307,7 @@ p#about {
   background-image: url(/assets/images/tabyretka1.jpg); }
 
 footer {
-  background-color: saddlebrown;
-  /*#foot_a{
-      padding-top: 5px;
-      text-align: center;
-     a{
-         color: rgb(155, 155, 155);
-         text-decoration: none;
-     }
-     a:hover{
-         color: white;
-     }
-  }*/ }
+  background-color: saddlebrown; }
   footer img {
     width: 20vw;
     height: 12vh; }
@@ -284,10 +352,6 @@ footer {
   nav a.navbar-brand {
     margin-left: 0; }
 
-  main #workinfo h1 {
-    font-size: 30px; }
-  main #workinfo img {
-    width: 100vw; }
   main #alertCont h3 {
     font-size: 20px; }
   main #carousel img {
