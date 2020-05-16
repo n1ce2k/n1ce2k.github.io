@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
     <body>
-        <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color: saddlebrown;">
+        <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: saddlebrown;">
             <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" style="height: 75px;"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -30,27 +30,30 @@
                         <a class="nav-link scale" href="work_info.html">Оплата i доставка<span class="sr-only">(current)</span></a>
                     </li>
                 </ul>
-                <li class="nav-item dropdown" type="none">
-                    <button type="button" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Мова </button>                
+                <li class="nav-item dropdown" type="none" style="padding-left: 0px;">
+                    <button id="btnlg" type="button" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Мова </button>                
                     <div class="dropdown-menu">
-                      <a class="dropdown-item" href="work_info.html">Українська</a>
+                      <a class="dropdown-item" href="work_info2.html">Українська</a>
                       <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="work_infoRU.html">Русский</a>
+                      <a class="dropdown-item" href="work_info2RU.html">Русский</a>
                     </div>
                   </li>
                 <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Пошук" aria-label="Search">
+                    <input id="search" class="form-control mr-sm-2" type="text" placeholder="Пошук" aria-label="Search">
                     <button class="btn btn-secondary my-2 my-sm-0" type="submit">Пошук</button>
                 </form>
             </div>
         </nav>
     <main role="main" class="containere-fluid">
-       <div class="container-fluid" id="workinfo">
+       <div class="container-fluid" id="workinfo" style="padding-top: 20px;">
         <div class="row">
             <div class="col-sm-2">
                 <ul>
+                    <div class="dropdown-divider"></div>
                     <li><a href="work_info.html"><h3>Як діє наша доставка</h3></a></li>
+                    <div class="dropdown-divider"></div>
                     <li><a href="work_info2.html" class="active"><h3>Процес покупки</h3></a></li>
+                    <div class="dropdown-divider"></div>
                 </ul>
             </div>
             <div class="col-sm-8">
@@ -77,10 +80,10 @@
                 <h3 style="text-align: justify;">— для фізичних осіб через Банк (при доставці по всій території України). Ви можете оплатити висланий вам рахунок безготівковим переказом в будь-якому банку (при цьому стягується банківська комісія). Як тільки оплата надходить на наш розрахунковий рахунок (як правило, гроші надходять на наступний день), товар передається в службу доставки. Прохання після здійснення оплати інформувати менеджерів;<br>
                     — для юридичних осіб (в тому числі платників ПДВ) з оплатою за безготівковим розрахунком можлива доставка в будь-яке наше представництво. Оформлення замовлення з наданням пакету необхідних документів є при замовленні від 500 грн.</h3>
                 <h2>Картками Visa, MasterCard</h2>
-                <h3 style="text-align: justify;">Наш інтернет-магазин підключений до системи безпечних електронних платежів, квідорая дозволяє оплачувати наші товари і послуги за допомогою будь-яких карт Visa і MasterCard, випущених українськими банками.<br><br>
+                <h3 style="text-align: justify;">Наш інтернет-магазин підключений до системи безпечних електронних платежів, яка дозволяє оплачувати наші товари і послуги за допомогою будь-яких карт Visa і MasterCard, випущених українськими банками.<br><br>
                     Поле «Оплатити замовлення» карткою Visa/MasterCard є відразу в Кошику замовлення. Або ви можете оплатити ваше замовлення в Особистому кабінеті, якщо в момент замовлення виникли проблеми з оплатою.<br><br>
-                    Ви можете залишатися спокійними за ваші платежі в Інтернеті завдяки сучасній технології 3D Secure, квідорая є частиною програми Visa "Verified by Visa" і MasterCard «MasterCardSecureCode».<br><br>
-                    Увага! Одержувачем товару, сплаченого карткою Visa/MasterCard, може бути тільки власник карти.</h3>
+                    Ви можете залишатися спокійними за ваші платежі в Інтернеті завдяки сучасній технології 3D Secure, яка є частиною програми Visa "Verified by Visa" і MasterCard «MasterCardSecureCode».<br><br>
+                    <strong>Увага! Одержувачем товару, сплаченого карткою Visa/MasterCard, може бути тільки власник карти.</h3></strong><br>
             </div>
           </h1>        
        </div>

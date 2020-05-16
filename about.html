@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
     <body>
-        <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color: saddlebrown;">
+        <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: saddlebrown;">
             <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" style="height: 75px;"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -30,8 +30,8 @@
                         <a class="nav-link scale" href="work_info.html">Оплата i доставка</a>
                     </li>
                 </ul>
-                <li class="nav-item dropdown" type="none">
-                    <button type="button" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Мова</button>                
+                <li class="nav-item dropdown" type="none" style="padding-left: 0px;">
+                    <button id="btnlg" type="button" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Мова</button>                
                     <div class="dropdown-menu">
                       <a class="dropdown-item" href="about.html">Українська</a>
                       <div class="dropdown-divider"></div>
@@ -39,19 +39,19 @@
                     </div>
                   </li>
                 <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Пошук" aria-label="Search">
+                    <input id="search" class="form-control mr-sm-2" type="text" placeholder="Пошук" aria-label="Search">
                     <button class="btn btn-secondary my-2 my-sm-0" type="submit">Пошук</button>
                 </form>
             </div>
         </nav>  
         <main role="main" class="container">
-            <div class="starter-main" id="about">
+            <div class="starter-main" id="about" style="padding-top: 20px;"> 
                 <h1>Про нашу компанію</h1>
                 <p id="about">Компанія-виробник меблів «Меблевий рай» пропонує найкращу і якісну меблі. Надаючи вигідні ціни на покупку меблів.
                     Компанія «Меблевий рай» почала свою діяльність в 2007 році.За цей час, компанія встигла зарекомендувати себе, як надійна
                     і висококваліфікована команда фахівців.На усі товари ми надаємо гарантію і маємо щиру зацікавленість
-                    в задоволенні ваших пвідреб. «Меблевий рай» є успішним дилером кращих меблевих фабрик
-                    Україна і пропонує широкий вибір меблів, як для домашнього затишку, так і для комфортної робвіди
+                    в задоволенні ваших потреб. «Меблевий рай» є успішним дилером кращих меблевих фабрик
+                    Україна і пропонує широкий вибір меблів, як для домашнього затишку, так і для комфортної роботи
                     в офісі і прекрасного відпочинку в ресторанах і барах. Ми завжди раді допомогти нашим клієнтам вибрати  
                     меблі ту, яка буде відповідати їхнім побажанням ..</p>
                 <div class="container" id="carouselabout">
@@ -66,8 +66,7 @@
                           <div class="carousel-item">
                             <img class="d-block w-100" src="assets/images/about.png" alt="Третий слайд">
                           </div>                          
-                </div>
-                <br>
+                    </div><br>
                     <div class="under_slideS">
                         <h2>Чому Меблевий Рай?</h2>
                             <h3>

@@ -1,6 +1,16 @@
 * {
   font-family: "Century Gothic"; }
 
+ul {
+  list-style: none; }
+
+body {
+  padding-top: 0px; }
+
+nav #btnlg {
+  border-radius: 10px 10px 10px 10px; }
+nav #navbtn {
+  color: white; }
 nav li {
   padding-right: 10px;
   padding-left: 10px; }
@@ -18,82 +28,13 @@ nav a.navbar-brand img {
   transition: 0.25s; }
 
 .scale:hover {
-  transform: scale(1.2); }
+  transform: scale(1.15); }
 
 main {
   background-image: url(../images/bg.png); }
 
 #map iframe {
   height: 55vh; }
-
-#formCheck {
-  display: none;
-  font-family: Arial;
-  font-size: 17px;
-  padding: 8px; }
-  #formCheck * {
-    box-sizing: border-box; }
-  #formCheck .row {
-    display: -ms-flexbox;
-    /* IE10 */
-    display: flex;
-    -ms-flex-wrap: wrap;
-    /* IE10 */
-    flex-wrap: wrap;
-    margin: 0 -16px; }
-  #formCheck .col-25 {
-    -ms-flex: 25%;
-    /* IE10 */
-    flex: 25%; }
-  #formCheck .col-50 {
-    -ms-flex: 50%;
-    /* IE10 */
-    flex: 50%; }
-  #formCheck .col-75 {
-    -ms-flex: 75%;
-    /* IE10 */
-    flex: 75%; }
-  #formCheck .col-25,
-  #formCheck .col-50,
-  #formCheck .col-75 {
-    padding: 0 16px; }
-  #formCheck .container {
-    background-color: #f2f2f2;
-    padding: 5px 20px 15px 20px;
-    border: 1px solid lightgrey;
-    border-radius: 3px; }
-  #formCheck input[type=text] {
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 3px; }
-  #formCheck label {
-    margin-bottom: 10px;
-    display: block; }
-  #formCheck .icon-container {
-    margin-bottom: 20px;
-    padding: 7px 0;
-    font-size: 24px; }
-  #formCheck .btn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px;
-    margin: 10px 0;
-    border: none;
-    width: 100%;
-    border-radius: 3px;
-    cursor: pointer;
-    font-size: 17px; }
-  #formCheck .btn:hover {
-    background-color: #45a049; }
-  #formCheck a {
-    color: #2196F3; }
-  #formCheck hr {
-    border: 1px solid lightgrey; }
-  #formCheck span.price {
-    float: right;
-    color: grey; }
 
 #workinfo {
   padding-top: 50px; }
@@ -124,10 +65,12 @@ main {
 #about h1 {
   font-size: 60px;
   font-weight: bold; }
-
-p#about {
+#about p {
   text-align: justify;
   font-size: 25px; }
+#about #carouselabout {
+  padding-right: 0px;
+  padding-left: 0px; }
 
 #catalog {
   padding-top: 25px;
@@ -171,12 +114,19 @@ p#about {
   #btntop:hover {
     background-color: rgba(168, 77, 2, 0.774); }
 
-#carouselabout {
-  padding-right: 0px;
-  padding-left: 0px; }
-
-#aside {
-  border: 1px solid black; }
+#aside h3 {
+  text-align: center; }
+#aside li {
+  text-align: center;
+  opacity: 100%;
+  color: black; }
+  #aside li img {
+    height: 40px; }
+  #aside li a {
+    color: saddlebrown;
+    font-weight: bold; }
+  #aside li a:hover {
+    text-decoration: none; }
 
 #catalogitems {
   padding-bottom: 15px; }
@@ -185,11 +135,10 @@ p#about {
   #catalogitems h4 {
     font-size: 20px; }
 
-.picture_1 {
+.picture {
   margin: 0px 0 5px;
   width: 100%;
   height: 250px;
-  background-image: url(/assets/images/kreslonavi1.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -197,123 +146,92 @@ p#about {
   align-items: flex-end;
   justify-content: center;
   transition: all 0.2s ease; }
+
+.picture_1 {
+  background-image: url(/assets/images/kreslonavi1.jpg); }
 
 .picture_1:hover, .picture_1:focus {
   background-image: url(/assets/images/kreslonavi2.jpg); }
 
 .picture_2 {
-  margin: 0px 0 5px;
-  width: 100%;
-  height: 250px;
-  background-image: url(/assets/images/divancatalog1.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  transition: all 0.2s ease; }
+  background-image: url(/assets/images/divancatalog1.jpg); }
 
 .picture_2:hover, .picture_2:focus {
   background-image: url(/assets/images/divancatalog1_1.jpg); }
 
 .picture_3 {
-  margin: 0px 0 5px;
-  width: 100%;
-  height: 250px;
-  background-image: url(/assets/images/krovat1.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  transition: all 0.2s ease; }
+  background-image: url(/assets/images/krovat1.jpg); }
 
 .picture_3:hover, .picture_3:focus {
   background-image: url(/assets/images/krovat2.jpg); }
 
 .picture_4 {
-  margin: 0px 0 5px;
-  width: 100%;
-  height: 250px;
-  background-image: url(/assets/images/kreslo1.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  transition: all 0.2s ease; }
+  background-image: url(/assets/images/kreslo1.jpg); }
 
 .picture_4:hover, .picture_4:focus {
   background-image: url(/assets/images/kreslo1_1.jpg); }
 
 .picture_5 {
-  margin: 0px 0 5px;
-  width: 100%;
-  height: 250px;
-  background-image: url(/assets/images/kreslo_office.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  transition: all 0.2s ease; }
+  background-image: url(/assets/images/kreslo_office.jpg); }
 
 .picture_5:hover, .picture_5:focus {
   background-image: url(/assets/images/kreslo_office1.jpg); }
 
 .picture_6 {
-  margin: 0px 0 5px;
-  width: 100%;
-  height: 250px;
-  background-image: url(/assets/images/wkaf.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  transition: all 0.2s ease; }
+  background-image: url(/assets/images/wkaf.jpg); }
 
 .picture_6:hover, .picture_6:focus {
   background-image: url(/assets/images/wkaf1.jpg); }
 
 .picture_7 {
-  margin: 0px 0 5px;
-  width: 100%;
-  height: 250px;
-  background-image: url(/assets/images/stol.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  transition: all 0.2s ease; }
+  background-image: url(/assets/images/stol.jpg); }
 
 .picture_7:hover, .picture_7:focus {
   background-image: url(/assets/images/stol1.jpg); }
 
 .picture_8 {
-  margin: 0px 0 5px;
-  width: 100%;
-  height: 250px;
-  background-image: url(/assets/images/tabyretka.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  transition: all 0.2s ease; }
+  background-image: url(/assets/images/tabyretka.jpg); }
 
 .picture_8:hover, .picture_8:focus {
   background-image: url(/assets/images/tabyretka1.jpg); }
 
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  background-color: saddlebrown;
+  overflow-x: scroll;
+  transition: 0.5s;
+  padding-top: 60px;
+  opacity: 96%;
+  text-align: center; }
+  .sidenav img {
+    height: 40px; }
+  .sidenav h3 {
+    font-weight: bold;
+    padding-left: 15px;
+    color: white;
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3); }
+  .sidenav a {
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3); }
+  .sidenav a:hover {
+    color: #f1f1f1; }
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px; }
+
 footer {
+  padding-bottom: 10px;
   background-color: saddlebrown; }
   footer img {
     width: 20vw;
@@ -354,11 +272,27 @@ footer {
         height: 100%; }
 
 @media screen and (max-width: 576px) {
+  .under_slideS ul {
+    padding-left: 5px;
+    padding-right: 5px; }
+  .under_slideS h2 {
+    font-weight: bold;
+    font-size: 47px; }
+  .under_slideS h3 {
+    font-size: 20px; }
+
   nav img {
     width: 65vw; }
   nav a.navbar-brand {
     margin-left: 0; }
+  nav #search {
+    margin-right: 15px;
+    width: 60vw; }
 
+  main #catalog {
+    display: none; }
+  main #aside {
+    display: none; }
   main #alertCont h3 {
     font-size: 20px; }
   main #carousel img {
@@ -373,11 +307,13 @@ footer {
     font-weight: bold; }
   main p#about {
     text-align: justify;
-    font-size: 15px; }
+    font-size: 19px; }
 
   footer #imgfooter {
     width: 100%; } }
 @media screen and (min-width: 576px) {
+  main #navbtn {
+    display: none; }
   main #carousel img {
     height: 75vh; } }
 

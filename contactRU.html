@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
     <body>
-        <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color: saddlebrown;">
+        <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: saddlebrown;">
             <a class="navbar-brand" href="indexRU.html"><img src="assets/images/logo.png" style="height: 75px;"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -30,8 +30,8 @@
                         <a class="nav-link scale" href="work_infoRU.html">Оплата и доставка</a>
                     </li>
                 </ul>
-                <li class="nav-item dropdown" type="none">
-                    <button type="button" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Язык</button>                
+                <li class="nav-item dropdown" type="none" style="padding-left: 0px;">
+                    <button id="btnlg" type="button" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Язык</button>                
                     <div class="dropdown-menu">
                       <a class="dropdown-item" href="contact.html">Українська</a>
                       <div class="dropdown-divider"></div>
@@ -39,7 +39,7 @@
                     </div>
                   </li>
                 <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Поиск" aria-label="Search">
+                    <input id="search" class="form-control mr-sm-2" type="text" placeholder="Поиск" aria-label="Search">
                     <button class="btn btn-secondary my-2 my-sm-0" type="submit">Поиск</button>
                 </form>
             </div>
@@ -47,7 +47,7 @@
         
 
         <main role="main" class="container">
-            <div class="starter-main" id="about">
+            <div class="starter-main" id="about" style="padding-top: 20px;">
                 <h1>Наши контакты</h1>
                 <p><h3>Звони по Украине</h3></p>
                 <p>

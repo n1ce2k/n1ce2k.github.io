@@ -11,11 +11,11 @@
         <link rel="stylesheet" href="assets/scss/example.css">
     </head>
     <body>
-        <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color: saddlebrown;">
+        <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: saddlebrown;">
             <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" style="height: 75px;"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>        
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>     
                 <div class="collapse navbar-collapse" id="navbarsExampleDefault">
                 <ul class="navbar-nav mr-auto" >
                     <li class="nav-item active">
@@ -31,9 +31,8 @@
                         <a class="nav-link scale" href="work_info.html">Оплата і Доставка</a>
                     </li>       
                 </ul>
-                    <li class="nav-item dropdown" type="none" style="
-                    padding-left: 0px;">
-                        <button type="button" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Мова</button>                
+                    <li class="nav-item dropdown" type="none" style="padding-left: 0px;">
+                        <button id="btnlg" type="button" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Мова</button>                
                         <div class="dropdown-menu">
                           <a class="dropdown-item" href="index.html">Українська</a>
                           <div class="dropdown-divider"></div>
@@ -41,17 +40,17 @@
                         </div>
                       </li>
                 <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Пошук" aria-label="Search">
+                    <input id="search" class="form-control mr-sm-2" type="text" placeholder="Пошук" aria-label="Search">
                     <button class="btn btn-secondary my-2 my-sm-0" type="submit">Пошук</button>
                 </form>
                 
             </div>
         </nav>        
         
-        <main role="main" class="container-fluid">
-            <div class="starter-main" style="margin-bottom: -30px;">
+        <main role="main" class="container-fluid" id="main">
+            <div class="starter-main" style="margin-bottom: -30px; padding-top: 20px;">
                 <h1>Ласкаво просимо!</h1>
-                <p class="lead">У нашому інтернет-магазині ви знайдете саме те що вам пвідрібно !.<br>Наші меблі тільки для справжніх еліт!</p>
+                <p class="lead">У нашому інтернет-магазині ви знайдете саме те що вам потдрібно !.<br>Наші меблі тільки для справжніх еліт!</p>
             </div>
         <div class="container-fluid" id="carousel" style="padding-left: 0px; padding-right: 0px;">
             <div id="carouselExampleControls" class="carousel slide card" data-ride="carousel">
@@ -76,7 +75,9 @@
                 </a>
             </div>
         </div>
-            <div class="container-fluid" id="catalog">
+        <br><div class="container" style="text-align: center;">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()" id="navbtn">&#9776;Каталог</span></div>
+            <div class="container-fluid" id="catalog" style="padding-top: 0px">
                 <div class="row">
                     <div class="col-md-2 col-12 card">
                          <a href="#">Меблі для ванної</a>
@@ -102,16 +103,16 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-2" id="aside">
-                    <ul>
-                        <li>
-                            asdasdasd
-                        </li>
-                        <li>
-                            asdasdasd
-                        </li>
-                        <li>
-                            asdasdasd
-                        </li>
+                    <ul><h3>Асортимент</h3>
+                        <li><div class="dropdown-divider"></div><a href="#"><img src="assets/images/divan1.png"> Дивани</a></li>
+                        <li><div class="dropdown-divider"></div><a href="#"><img src="assets/images/kreslo1.png"> Крісла</a></li>
+                        <li><div class="dropdown-divider"></div><a href="#"><a href="#"><img src="assets/images/styl1.png"> Стільці</a></li>
+                        <li><div class="dropdown-divider"></div><a href="#"><img src="assets/images/krovat1.png"> Ліжка</a></li>
+                        <li><div class="dropdown-divider"></div><a href="#"><img src="assets/images/polka1.png"> Полиці</a></li>
+                        <li><div class="dropdown-divider"></div><a href="#"><img src="assets/images/shraf1.png"> Шафи</a></li>
+                        <li><div class="dropdown-divider"></div><a href="#"><img src="assets/images/tymba1.png"> Тумби</a></li>
+                        <li><div class="dropdown-divider"></div><a href="#"><img src="assets/images/veshalka1.png"> Вішалки</a></li>
+                        <div class="dropdown-divider"></div>
                     </ul>
                 </div>      
         <div class="col-sm-10">
@@ -121,14 +122,14 @@
                         <div class="card-body">
                             <h1 class="card-title pricing-card-title text-center">Крісло<br><small class="text-muted">Na'Vi</small></h1>
                             <ul class="list-unstyled mt-3 mb-4">
-                        <div class="picture_1"></div>
+                        <div class="picture picture_1"></div>
                         <h3>Характеристики:<br>
                             <h4>
                             <strong>Висота:</strong> 150 см.<br>
                             <strong>Ширiна: </strong>100 см.<br>
                             <strong>Вага:</strong> 9.25 Кг.<br>
                             <strong>Материал:</strong> шкірзам, наповнювач, метал, пластик.<br>
-                            <strong>Цена:</strong> 10999 грн.
+                            <strong>Цiна:</strong> 10999 грн.
                             </h4>
                         </h3>
                             </ul>
@@ -139,13 +140,13 @@
                         <div class="card-body">
                             <h1 class="card-title pricing-card-title text-center">Диван<br><small class="text-muted">Empresso</small></h1>
                             <ul class="list-unstyled mt-3 mb-4">
-                                <div class="picture_2"></div>
+                                <div class="picture picture_2"></div>
                                 <h3>Характеристики:<br>
                                     <h4><strong>Висота:</strong> 110 см.<br>
                                     <strong>Ширiна: </strong>210 см.<br>
                                     <strong>Вага:</strong> 50.59 Кг.<br>
                                     <strong>Материал:</strong> тканина, метал, дерево, шкiрзам<br>
-                                    <strong>Цена:</strong> 7999 грн.</h4>
+                                    <strong>Цiна:</strong> 7999 грн.</h4>
                                 </h3>
                             </ul>
                             <button type="button" class="btn btn-lg btn-block btn-outline-dark" data-toggle="modal" data-target="#myModal">Купити</button>
@@ -155,13 +156,13 @@
                         <div class="card-body">
                             <h1 class="card-title pricing-card-title text-center">Ліжко<br><small class="text-muted">Premium</small></h1>
                             <ul class="list-unstyled mt-3 mb-4">
-                                <div class="picture_3"></div>
+                                <div class="picture picture_3"></div>
                                 <h3>Характеристики:<br>
                                     <h4><strong>Висота:</strong> 150 см.<br>
                                     <strong>Ширiна: </strong>210 см.<br>
                                     <strong>Вага:</strong> 70.59 Кг.<br>
                                     <strong>Материал:</strong> тканина, метал, дерево, шкiрзам<br>
-                                    <strong>Цена:</strong> 7999 грн.</h4>
+                                    <strong>Цiна:</strong> 7999 грн.</h4>
                                 </h3>
                             </ul>
                             <button type="button" class="btn btn-lg btn-block btn-outline-dark" data-toggle="modal" data-target="#myModal">Купити</button>
@@ -171,14 +172,14 @@
                         <div class="card-body">
                             <h1 class="card-title pricing-card-title text-center">Крiсло<br><small class="text-muted">Super</small></h1>
                             <ul class="list-unstyled mt-3 mb-4">
-                                <div class="picture_4"></div>
+                                <div class="picture picture_4"></div>
                                 <h3>Характеристики:<br>
                                     <h4>
                                     <strong>Висота:</strong> 120 см.<br>
                                     <strong>Ширiна: </strong>210 см.<br>
                                     <strong>Вага:</strong> 47.59 Кг.<br>
                                     <strong>Материал:</strong> тканина, метал, дерево, наповнювач<br>
-                                    <strong>Цена:</strong> 3999 грн.
+                                    <strong>Цiна:</strong> 3999 грн.
                                     </h4>
                                 </h3>
                             </ul>
@@ -189,14 +190,14 @@
                         <div class="card-body">
                             <h1 class="card-title pricing-card-title text-center">Крiсло<br><small class="text-muted">Office</small></h1>
                             <ul class="list-unstyled mt-3 mb-4">
-                                <div class="picture_5"></div>
+                                <div class="picture picture_5"></div>
                                 <h3>Характеристики:<br>
                                     <h4>
                                     <strong>Висота:</strong> 120 см.<br>
                                     <strong>Ширiна: </strong>90 см.<br>
                                     <strong>Вага:</strong> 7.59 Кг.<br>
                                     <strong>Материал:</strong> шкірзам, наповнювач, метал, пластик.<br>
-                                    <strong>Цена:</strong> 4999 грн.
+                                    <strong>Цiна:</strong> 4999 грн.
                                     </h4>
                                 </h3>
                             </ul>
@@ -207,14 +208,14 @@
                         <div class="card-body">
                             <h1 class="card-title pricing-card-title text-center">Шафа<br><small class="text-muted">Odessa</small></h1>
                             <ul class="list-unstyled mt-3 mb-4">
-                                <div class="picture_6"></div>
+                                <div class="picture picture_6"></div>
                                 <h3>Характеристики:<br>
                                     <h4>
                                     <strong>Висота:</strong> 250 см.<br>
                                     <strong>Ширiна: </strong>200 см.<br>
                                     <strong>Вага:</strong> 50.59 Кг.<br>
                                     <strong>Материал:</strong> ДСП, метал, дзеркал, пластик.<br>
-                                    <strong>Цена:</strong> 8999 грн.
+                                    <strong>Цiна:</strong> 8999 грн.
                                     </h4>
                                 </h3>
                             </ul>
@@ -225,14 +226,14 @@
                         <div class="card-body">
                             <h1 class="card-title pricing-card-title text-center">Стiл<br><small class="text-muted">Horse</small></h1>
                             <ul class="list-unstyled mt-3 mb-4">
-                                <div class="picture_7"></div>
+                                <div class="picture picture_7"></div>
                                 <h3>Характеристики:<br>
                                     <h4>
                                     <strong>Висота:</strong> 105 см.<br>
                                     <strong>Ширiна: </strong> 100 см.<br>
                                     <strong>Вага:</strong> 50.59 Кг.<br>
                                     <strong>Материал:</strong> ДСП, дерево, метал. <br>
-                                    <strong>Цена:</strong> 4999 грн.
+                                    <strong>Цiна:</strong> 4999 грн.
                                     </h4>
                                 </h3>
                             </ul>
@@ -243,14 +244,14 @@
                         <div class="card-body">
                             <h1 class="card-title pricing-card-title text-center">Табуретка<br><small class="text-muted">Octa</small></h1>
                             <ul class="list-unstyled mt-3 mb-4">
-                                <div class="picture_8"></div>
+                                <div class="picture picture_8"></div>
                                 <h3>Характеристики:<br>
                                     <h4>
                                     <strong>Висота:</strong> 70 см.<br>
                                     <strong>Ширiна: </strong> 85 см.<br>
                                     <strong>Вага:</strong> 10.59 Кг.<br>
                                     <strong>Материал:</strong> ДСП, метал, дзеркал, пластик.<br>
-                                    <strong>Цена:</strong> 999 грн.
+                                    <strong>Цiна:</strong> 999 грн.
                                     </h4>
                                 </h3>
                             </ul>
@@ -268,7 +269,7 @@
               <li class="page-item disabled">
                 <a class="page-link text-dark" href="#" tabindex="-1">Попер.</a>
               </li>
-              <li class="page-item active"><a class="page-link text-light" href="#">1</a></li>
+              <li class="page-item"><a class="page-link text" href="#" style="color: brown">1</a></li>
               <li class="page-item"><a class="page-link text-dark" href="#">2</a></li>
               <li class="page-item"><a class="page-link text-dark" href="#">3</a></li>
               <li class="page-item">
@@ -277,6 +278,7 @@
             </ul>
           </nav>
         </div>
+        
 </main>
 
 <footer>
@@ -299,12 +301,11 @@
         </div>
 </div>
 </footer>
-<!--<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">-->
     <div class="modal fade" id="myModal">
         <div class="modal-dialog modal-lg">
           <div class="modal-content">
               <div class="modal-header">
-              <h3 class="modal-title">Заказ мебели</h3>
+              <h3 class="modal-title">Замовлення меблів</h3>
               <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
 
@@ -312,10 +313,10 @@
               <div class="container-fluid">
                   <div class="row">
                         <div class="col-sm-6 text-center">
-                            <h3>Личная информация</h3>
+                            <h3>Особиста інформація</h3>
                             <form class="regForm px-3 py-3">
                                 <div class="form-group">
-                                    <label for="custName">Ваше ФИО</label>
+                                    <label for="custName">Ваше ПІБ</label>
                                     <input type="text" class="form-control" id="custName" placeholder="Андреев Андрей Андреевич">
                                 </div>
                                 <div class="form-group">
@@ -331,7 +332,7 @@
                                 <input type="text" class="form-control" id="custadress" placeholder="вул. Адреева 63">
                                 </div>
                                 <div class="form-group">
-                                    <label for="custEmail">Город</label>
+                                    <label for="custEmail">Мiсто</label>
                                 <input type="text" class="form-control" id="custcity" placeholder="м. Марiуполь">
                                 </div>
                             </form>
@@ -340,7 +341,7 @@
                             <h3>Оплата</h3>
                             <form class="regForm px-3 py-3">
                                 <div class="form-group">
-                                    <label for="custName">Поддерживающие карты</label>
+                                    <label for="custName">Підтримуючи карти</label>
                                     <div class="icon-container" style="height: 38px;">
                                         <i><img src="/assets/images/1.png" alt="" style="width: 50px"></i>
                                         <i><img src="/assets/images/2.png" alt="" style="width: 50px"></i>
@@ -349,11 +350,11 @@
                                       </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="custName">ФИО владельца карты</label>
+                                    <label for="custName">ПІБ власника карти</label>
                                     <input type="text" class="form-control" id="custName" placeholder="Андреев Андрей Андреевич">
                                 </div>
                                 <div class="form-group">
-                                    <label for="custName">Номер карты</label>
+                                    <label for="custName">Номер карти</label>
                                     <input type="text" class="form-control" id="custName" placeholder="1234 5678 9012 3456">
                                 </div>
                                 <div class="form-group">
@@ -362,11 +363,11 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-6">
-                                      <label for="expyear">Месяц</label>
+                                      <label for="expyear">Мiсяц</label>
                                       <input type="text" class="form-control" name="expyear" placeholder="01">
                                     </div>
                                     <div class="col-6">
-                                      <label for="cvv">Год</label>
+                                      <label for="cvv">Рiк</label>
                                       <input type="text" class="form-control" id="custcvv" placeholder="2018">
                                     </div>
                                   </div>
@@ -375,17 +376,37 @@
                     </div>
                 </div>
             </div>
-            
-            <!-- Modal footer -->
             <div class="modal-footer">
-                <button type="button" class="btn btn-outline-success" data-dismiss="modal">Подвердить</button>
-                <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Отменить</button>
+                <button type="button" class="btn btn-outline-success" data-dismiss="modal">Підтвердити</button>
+                <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Скасувати</button>
             </div>
-            
           </div>
         </div>
       </div>
-  <button onclick="topFunction()" id="btntop" title="На верх">&#9650;</button>
+<div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <h3>Асортимент</h3>
+        <div class="dropdown-divider"></div>
+        <a href="#"><img src="assets/images/divan.png"> Дивани</a>
+        <div class="dropdown-divider"></div>
+        <a href="#"><img src="assets/images/kreslo.png"> Крісла</a>
+        <div class="dropdown-divider"></div>
+        <a href="#"><a href="#"><img src="assets/images/styl.png"> Стільці</a>
+        <div class="dropdown-divider"></div>
+        <a href="#"><img src="assets/images/krovat.png"> Ліжка</a>
+        <div class="dropdown-divider"></div>
+        <a href="#"><img src="assets/images/polka.png"> Полиці</a>
+        <div class="dropdown-divider"></div>
+        <a href="#"><img src="assets/images/shraf.png"> Шафи</a>
+        <div class="dropdown-divider"></div>
+        <a href="#"><img src="assets/images/tymba.png"> Тумби</a>
+        <div class="dropdown-divider"></div>        
+        <a href="#"><img src="assets/images/veshalka.png"> Вішалки</a>
+        <div class="dropdown-divider"></div>
+       
+    
+      </div>
+<button onclick="topFunction()" id="btntop" title="На верх">&#9650;</button>
         <script src="assets/js/index.js"></script>
         <script src="assets/js/popper.min.js"></script>
         <script src="assets/js/jquery-3.4.1.slim.min.js"></script>
