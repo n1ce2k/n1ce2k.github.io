@@ -8,9 +8,19 @@ body{
     padding-top: 0px;
 }
 nav{
-    #btnlg{
-        border-radius: 10px 10px 10px 10px;
-    }
+    ul{
+        #btnlg{
+            border-radius: 10px 10px 10px 10px;
+            color: black;
+            
+        }
+        text-align: center;
+        #lga{
+            a{
+                text-align: center;
+            }
+        }
+    }    
     #navbtn{
         color: white;
     }
@@ -114,9 +124,11 @@ nav{
     }
     div.col-md-2:hover{
         transition:all 0.3s ease;
+        font-weight: bold;
     }
     div.col-md-2:hover{
         box-shadow: inset 0 0 0 5px #ce9436;
+        font-weight: bold;
     }
     .row{
         .col-md-2{
@@ -126,6 +138,7 @@ nav{
                 font-size: 18px;              
             }
             a:hover{
+                transition:all 0.3s ease;
                 font-weight: bold;
                 color: brown;
                 text-decoration: none;
@@ -205,52 +218,40 @@ nav{
     
   background-image: url(/assets/images/kreslonavi2.jpg);
 }
-
 .picture_2{
     background-image: url(/assets/images/divancatalog1.jpg);        
 }
-.picture_2:hover, .picture_2:focus {
-    
+.picture_2:hover, .picture_2:focus { 
   background-image: url(/assets/images/divancatalog1_1.jpg);
 }
-
 .picture_3{
     background-image: url(/assets/images/krovat1.jpg);  
 }
 .picture_3:hover, .picture_3:focus {
-    
   background-image: url(/assets/images/krovat2.jpg);
 }
-
 .picture_4{
     background-image: url(/assets/images/kreslo1.jpg);    
 }
 .picture_4:hover, .picture_4:focus {
-    
   background-image: url(/assets/images/kreslo1_1.jpg);
 }
-
 .picture_5{
     background-image: url(/assets/images/kreslo_office.jpg);     
 }
 .picture_5:hover, .picture_5:focus {
-    
   background-image: url(/assets/images/kreslo_office1.jpg);
 }
-
 .picture_6{
     background-image: url(/assets/images/wkaf.jpg);
 }
 .picture_6:hover, .picture_6:focus {
-    
   background-image: url(/assets/images/wkaf1.jpg);
 }
-
 .picture_7{
     background-image: url(/assets/images/stol.jpg);    
 }
 .picture_7:hover, .picture_7:focus {
-    
   background-image: url(/assets/images/stol1.jpg);
 }
 .picture_8{
@@ -260,7 +261,6 @@ nav{
     
   background-image: url(/assets/images/tabyretka1.jpg);
 }
-
 .sidenav {
     height: 100%;
     width: 0;
@@ -301,8 +301,6 @@ nav{
         margin-left: 50px;
       }
   }
-
-
 footer{
     padding-bottom: 10px;
     background-color: saddlebrown;
