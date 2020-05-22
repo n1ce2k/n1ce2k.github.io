@@ -9,6 +9,8 @@ body {
 
 nav ul {
   text-align: center; }
+  nav ul li a {
+    font-size: 1.3vw; }
   nav ul #btnlg {
     border-radius: 10px 10px 10px 10px;
     color: black; }
@@ -129,18 +131,21 @@ main {
     background-color: rgba(168, 77, 2, 0.774); }
 
 #aside h3 {
-  text-align: center; }
-#aside li {
   text-align: center;
-  opacity: 100%;
-  color: black; }
-  #aside li img {
-    height: 40px; }
-  #aside li a {
-    color: saddlebrown;
-    font-weight: bold; }
-  #aside li a:hover {
-    text-decoration: none; }
+  font-size: 1.5vw; }
+#aside ul {
+  padding: 0; }
+  #aside ul li {
+    text-align: center;
+    opacity: 100%;
+    color: black; }
+    #aside ul li img {
+      height: 40px; }
+    #aside ul li a {
+      color: saddlebrown;
+      font-weight: bold; }
+    #aside ul li a:hover {
+      text-decoration: none; }
 
 #catalogitems {
   padding-bottom: 15px; }
@@ -169,52 +174,52 @@ main {
   transition: all 0.2s ease; }
 
 .picture_1 {
-  background-image: url(/assets/images/kreslonavi1.jpg); }
+  background-image: url(../images/kreslonavi1.jpg); }
 
 .picture_1:hover, .picture_1:focus {
-  background-image: url(/assets/images/kreslonavi2.jpg); }
+  background-image: url(../images/kreslonavi2.jpg); }
 
 .picture_2 {
-  background-image: url(/assets/images/divancatalog1.jpg); }
+  background-image: url(../images/divancatalog1.jpg); }
 
 .picture_2:hover, .picture_2:focus {
-  background-image: url(/assets/images/divancatalog1_1.jpg); }
+  background-image: url(../images/divancatalog1_1.jpg); }
 
 .picture_3 {
-  background-image: url(/assets/images/krovat1.jpg); }
+  background-image: url(../images/krovat1.jpg); }
 
 .picture_3:hover, .picture_3:focus {
-  background-image: url(/assets/images/krovat2.jpg); }
+  background-image: url(../images/krovat2.jpg); }
 
 .picture_4 {
-  background-image: url(/assets/images/kreslo1.jpg); }
+  background-image: url(../images/kreslo1.jpg); }
 
 .picture_4:hover, .picture_4:focus {
-  background-image: url(/assets/images/kreslo1_1.jpg); }
+  background-image: url(../images/kreslo1_1.jpg); }
 
 .picture_5 {
-  background-image: url(/assets/images/kreslo_office.jpg); }
+  background-image: url(../images/kreslo_office.jpg); }
 
 .picture_5:hover, .picture_5:focus {
-  background-image: url(/assets/images/kreslo_office1.jpg); }
+  background-image: url(../images/kreslo_office1.jpg); }
 
 .picture_6 {
-  background-image: url(/assets/images/wkaf.jpg); }
+  background-image: url(../images/wkaf.jpg); }
 
 .picture_6:hover, .picture_6:focus {
-  background-image: url(/assets/images/wkaf1.jpg); }
+  background-image: url(../images/wkaf1.jpg); }
 
 .picture_7 {
-  background-image: url(/assets/images/stol.jpg); }
+  background-image: url(../images/stol.jpg); }
 
 .picture_7:hover, .picture_7:focus {
-  background-image: url(/assets/images/stol1.jpg); }
+  background-image: url(../images/stol1.jpg); }
 
 .picture_8 {
-  background-image: url(/assets/images/tabyretka.jpg); }
+  background-image: url(../images/tabyretka.jpg); }
 
 .picture_8:hover, .picture_8:focus {
-  background-image: url(/assets/images/tabyretka1.jpg); }
+  background-image: url(../images/tabyretka1.jpg); }
 
 .sidenav {
   height: 100%;
@@ -307,6 +312,8 @@ footer {
   .under_slideS h3 {
     font-size: 20px; }
 
+  nav ul li a {
+    font-size: 20px; }
   nav img {
     width: 65vw; }
   nav a.navbar-brand {
