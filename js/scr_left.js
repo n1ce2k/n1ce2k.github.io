@@ -25,9 +25,9 @@ if (document.querySelectorAll((".animate_js_left"))){
         element.classList.add("animate__fadeInLeft", "position-def");
     };
 
-    const hideScrollElement = (element) => {
-        element.classList.remove("animate__fadeInLeft", "position-def");
-    };
+    // const hideScrollElement = (element) => {
+    //     element.classList.remove("animate__fadeInLeft", "position-def");
+    // };
 
 
     const handleScrollAnimation = () => {
@@ -68,9 +68,9 @@ if (document.querySelectorAll((".animate_js_right"))){
         element.classList.add("animate__fadeInRight", "position-def");
     };
 
-    const hideScrollElement = (element) => {
-        element.classList.remove("animate__fadeInRight", "position-def");
-    };
+    // const hideScrollElement = (element) => {
+    //     element.classList.remove("animate__fadeInRight", "position-def");
+    // };
 
 
     const handleScrollAnimation = () => {
@@ -111,9 +111,9 @@ if (document.querySelectorAll((".animate_js_up"))){
         element.classList.add("animate__fadeInUp", "position-def");
     };
 
-    const hideScrollElement = (element) => {
-        element.classList.remove("animate__fadeInUp", "position-def");
-    };
+    // const hideScrollElement = (element) => {
+    //     element.classList.remove("animate__fadeInUp", "position-def");
+    // };
 
 
     const handleScrollAnimation = () => {
@@ -154,9 +154,9 @@ if (document.querySelectorAll((".animate_js_down"))){
         element.classList.add("animate__fadeInDown", "position-def");
     };
 
-    const hideScrollElement = (element) => {
-        element.classList.remove("animate__fadeInDown", "position-def");
-    };
+    // const hideScrollElement = (element) => {
+    //     element.classList.remove("animate__fadeInDown", "position-def");
+    // };
 
 
     const handleScrollAnimation = () => {
