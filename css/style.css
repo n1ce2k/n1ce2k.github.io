@@ -4,6 +4,11 @@
   background: #F4AB00;
 }
 
+.ov-h {
+  overflow: hidden;
+  max-width: 100%;
+}
+
 .my-slider-progress {
   background: #ccc;
 }
